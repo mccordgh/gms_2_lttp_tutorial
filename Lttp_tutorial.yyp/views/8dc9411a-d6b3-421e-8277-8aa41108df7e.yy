@@ -6,7 +6,8 @@
     "children": [
         "7d4a55f7-be0b-4bae-8cff-f0d894174e48",
         "7eed8d93-f901-4954-877c-89c923e19a4b",
-        "b390722a-c034-41e6-9689-a50456721551"
+        "b390722a-c034-41e6-9689-a50456721551",
+        "15b1f447-3a4f-453d-88de-621079cf3408"
     ],
     "filterType": "GMSprite",
     "folderName": "World Sprites",

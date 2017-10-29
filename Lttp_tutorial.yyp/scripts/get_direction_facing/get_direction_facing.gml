@@ -1,4 +1,4 @@
-///@param _direction
+///@param direction
 
 var _direction = argument0
 
