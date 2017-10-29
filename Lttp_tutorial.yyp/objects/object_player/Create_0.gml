@@ -1,3 +1,5 @@
+initialize_movement_entity(0.5, 1, object_solid);
+
 image_speed = 0;
 
 enum player {
@@ -11,8 +13,10 @@ enum dir {
 	down
 }
 
-speed_ = 2;
+acceleration_ = 1;
+max_speed_ = 2;
 direction_facing_ = dir.right;
+direction_ = 0;
 
 // Sprite Move Lookup Table
 sprite_[player.move, dir.right] = sprite_player_run_right;
