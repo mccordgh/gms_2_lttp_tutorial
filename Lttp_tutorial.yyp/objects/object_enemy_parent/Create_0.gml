@@ -1,4 +1,5 @@
 initialize_movement_entity(1, .5, object_solid);
+initialize_hurtbox_entity();
 
 image_speed = 0;
 

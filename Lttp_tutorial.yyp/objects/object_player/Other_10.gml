@@ -1,11 +1,11 @@
 /// @description Move state
 
 var _animation_speed = 0.6
-var _x_input = keyboard_check(vk_right) - keyboard_check(vk_left);
-var _y_input = keyboard_check(vk_down) - keyboard_check(vk_up);
+var _x_input = object_input_manager.right_ - object_input_manager.left_;
+var _y_input = object_input_manager.down_ - object_input_manager.up_;
 var _input_direction = point_direction(0, 0, _x_input, _y_input);
-var _attack_input = keyboard_check_pressed(ord("X"));
-var _roll_input = keyboard_check_pressed(ord("Z"));
+var _attack_input = object_input_manager.action_one_pressed_;
+var _roll_input = object_input_manager.action_two_pressed_;
 
 roll_direction_ = direction_facing_ * 90;
 

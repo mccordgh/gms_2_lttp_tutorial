@@ -6,9 +6,11 @@ if (animation_hit_frame(1)) {
 	var _angle = direction_facing_ * 90
 	var _frames_til_destroy = 3;
 	var _damage = 1;
-	var _knockback = 8;
-	var _targets = [];
+	var _knockback = 4;
+	var _targets = [object_enemy_parent, object_grass];
 	var _hitbox = create_hitbox(sprite_sword_hitbox, x, y, _angle, _frames_til_destroy, _targets, _damage, _knockback);	
+
+	audio_play_sound(sound_swipe, 7, false);
 
 	switch (direction_facing_) {
 		case dir.up:
