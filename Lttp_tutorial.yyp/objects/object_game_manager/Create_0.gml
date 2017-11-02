@@ -7,6 +7,7 @@ global.player_health = global.player_max_health;
 global.player_max_stamina = 2;
 global.player_stamina = global.player_max_stamina;
 global.player_gems = 0;
+global.player_start_position = instance_game_start;
 
 instance_create_layer(0, 0, "Instances", object_input_manager);
 
