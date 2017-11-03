@@ -23,4 +23,13 @@ paused_ = false;
 paused_sprite_ = noone;
 paused_sprite_scale = display_get_gui_width() / view_wport[0];
 
+item_index_ = 0;
+global.equipped_item_[0] = noone;
+global.equipped_item_[1] = noone;
+
+inventory_create(6);
+inventory_add_item(object_bomb_item);
+inventory_add_item(object_ring_item);
+inventory_add_item(object_sword_item);
+
 //audio_play_sound(sound_bg_music, 10, true);

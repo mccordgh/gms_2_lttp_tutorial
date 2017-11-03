@@ -36,3 +36,16 @@ var _y = _gui_height - 16 + 4;
 
 draw_sprite(sprite_gem, 0, _x - 16, _y + 7);
 draw_text(_x - 8, _y - 1, _gem_string);
+
+inventory_draw(4, 36);
+
+draw_sprite(sprite_inventory_box, 0, 4, 4);
+draw_sprite(sprite_inventory_box, 0, 36, 4);
+
+if (instance_exists(global.equipped_item_[0])) {
+	draw_sprite(global.equipped_item_[0].sprite_, 0, 20, 20);	
+}
+
+if (instance_exists(global.equipped_item_[1])) {
+	draw_sprite(global.equipped_item_[1].sprite_, 0, 52, 20);	
+}
