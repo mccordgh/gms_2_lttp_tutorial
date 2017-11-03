@@ -5,7 +5,8 @@
     "name": "e20f866b-b1f0-44d5-aa3d-41c0d086dd80",
     "children": [
         "1de381e9-9df4-40c8-8bdd-622296d1eed3",
-        "ebf15ea5-c04a-4d97-898c-67939e14494a"
+        "ebf15ea5-c04a-4d97-898c-67939e14494a",
+        "e8b0f94f-bf6a-4fed-ac11-19b340bd8ad9"
     ],
     "filterType": "GMScript",
     "folderName": "Helper Scripts",
