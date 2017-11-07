@@ -26,7 +26,7 @@ direction_facing_ = dir.right;
 roll_direction_ = 0;
 roll_speed_ = 2;
 
-
+current_found_item_sprite_ = noone;
 starting_state_ = player.move;
 state_ = starting_state_;
 
@@ -60,3 +60,5 @@ sprite_[player.bomb, dir.up] = sprite_player_run_up;
 sprite_[player.bomb, dir.left] = sprite_player_run_right;
 sprite_[player.bomb, dir.down] = sprite_player_run_down;
 
+// Found Item State Sprite Lookup Table
+sprite_[player.found_item, dir.down] = sprite_player_found_item;

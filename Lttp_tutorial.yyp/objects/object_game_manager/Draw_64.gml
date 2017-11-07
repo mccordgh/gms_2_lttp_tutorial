@@ -47,8 +47,8 @@ var _text_width = string_width(_gem_string);
 var _x = _gui_width - _text_width + 4;
 var _y = _gui_height - 16 + 4;
 
-draw_sprite(sprite_gem, 0, _x - 16, _y + 7);
-draw_text(_x - 8, _y - 1, _gem_string);
+draw_sprite(sprite_gem, 0, _x - 22, _y + 2);
+draw_text(_x - 12, _y - 8, _gem_string);
 
 inventory_draw(4, 36);
 

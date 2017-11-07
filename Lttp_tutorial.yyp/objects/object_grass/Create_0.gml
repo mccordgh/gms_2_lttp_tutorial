@@ -1,7 +1,6 @@
 initialize_hurtbox_entity();
 
-//depth = -y - 2;
-depth = 100
+depth = -y - 2;
 
 grass_collider_ = instance_create_layer(x - 2, y - 2, "Instances", object_solid);
 
