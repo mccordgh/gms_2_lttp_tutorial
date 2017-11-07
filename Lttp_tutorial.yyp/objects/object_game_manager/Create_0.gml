@@ -6,10 +6,12 @@ instance_create_layer(0, 0, "Instances", object_input_manager);
 
 global.player_max_health = 4;
 global.player_health = global.player_max_health;
-global.player_max_stamina = 2;
+global.player_max_stamina = 3;
 global.player_stamina = global.player_max_stamina;
 global.player_gems = 0;
 global.player_start_position = instance_game_start;
+
+global.sword_not_found = 1;
 
 var _font_string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ.abcdefghijklmnopqrstuvwxyz1234567890>,!':-+";
 global.font = font_add_sprite_ext(sprite_font, _font_string, true, 1);
@@ -30,6 +32,5 @@ global.equipped_item_[1] = noone;
 inventory_create(6);
 inventory_add_item(object_bomb_item);
 inventory_add_item(object_ring_item);
-inventory_add_item(object_sword_item);
 
 //audio_play_sound(sound_bg_music, 10, true);

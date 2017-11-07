@@ -1,0 +1,1 @@
+event_user(PICKED_UP);
