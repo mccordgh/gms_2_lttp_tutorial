@@ -30,7 +30,7 @@ global.equipped_item_[0] = noone;
 global.equipped_item_[1] = noone;
 
 inventory_create(6);
-inventory_add_item(object_bomb_item);
-inventory_add_item(object_ring_item);
+//inventory_add_item(object_bomb_item);
+//inventory_add_item(object_ring_item);
 
 //audio_play_sound(sound_bg_music, 10, true);

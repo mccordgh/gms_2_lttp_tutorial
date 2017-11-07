@@ -2053,6 +2053,25 @@
             }
         },
         {
+            "Key": "a3e292f3-a7bf-4f54-97d6-5b3c6c7cb15a",
+            "Value": {
+                "id": "4beb851f-cda8-47bc-9b6c-94ef3fc38de5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/sound14\/sound14.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a5c6c6e9-f98b-44b6-ba8f-b0613a5019ef",
             "Value": {
                 "id": "de8f26c7-394b-4e99-93a7-22bbb8cf5b5e",

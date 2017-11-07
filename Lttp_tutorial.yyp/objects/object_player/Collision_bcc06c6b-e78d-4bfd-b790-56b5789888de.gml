@@ -1,5 +1,5 @@
 /// @description hitbox logic
-if (hurtbox_entity_can_be_hit_by(other)) {
+if (hurtbox_entity_can_be_hit_by(other) and !invincible_) {
 	invincible_ = true;
 	alarm[0] = global.one_second
 	
