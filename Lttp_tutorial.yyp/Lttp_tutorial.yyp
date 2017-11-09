@@ -514,6 +514,25 @@
             }
         },
         {
+            "Key": "21d41232-fe62-4e0b-bd42-e10dcb137cb3",
+            "Value": {
+                "id": "7e4de758-7e12-43c8-9faa-95a3f34f4d17",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "tilesets\/tileset_mollys_house\/tileset_mollys_house.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "233889d2-a9ae-4d85-9f94-77114c38c85a",
             "Value": {
                 "id": "7bc55400-0690-4f85-a11f-81b0f3b541d6",
@@ -818,6 +837,25 @@
             }
         },
         {
+            "Key": "488db718-5291-4780-bec1-797985d9a17a",
+            "Value": {
+                "id": "0186dce3-e46d-4dae-8097-94259c5ec413",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/488db718-5291-4780-bec1-797985d9a17a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4aa9f5d6-d673-4b4b-ac1b-fcf1fcbf8698",
             "Value": {
                 "id": "2e7beb33-72a4-4e20-80b1-df50cbe18067",
@@ -1119,6 +1157,25 @@
                 ],
                 "resourcePath": "views\/60ed594e-ea6c-4b24-a8cb-cf74177e8c66.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "61de5426-22cc-476b-8193-760560a25bfb",
+            "Value": {
+                "id": "94f08163-6788-4c5b-9e30-b0cfea7745cc",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprite_mollys_house\/sprite_mollys_house.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1613,6 +1670,25 @@
                 ],
                 "resourcePath": "sprites\/sprite_dirt_wall_tileset\/sprite_dirt_wall_tileset.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "85018ae5-01d3-4ac6-8395-b5df16bc0309",
+            "Value": {
+                "id": "b1731196-4d01-4158-874b-02ee6dc9e0cc",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/room_home\/room_home.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2240,6 +2316,25 @@
                 ],
                 "resourcePath": "sounds\/sound_unpause\/sound_unpause.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "bb51170e-99ac-4dbc-9d51-af30e4ffcca3",
+            "Value": {
+                "id": "bc6f28c4-912a-4f1a-bf7d-bfb81f47323f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/bb51170e-99ac-4dbc-9d51-af30e4ffcca3.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

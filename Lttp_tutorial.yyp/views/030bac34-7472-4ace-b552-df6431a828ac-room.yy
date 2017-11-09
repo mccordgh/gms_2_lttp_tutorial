@@ -5,7 +5,8 @@
     "name": "030bac34-7472-4ace-b552-df6431a828ac-room",
     "children": [
         "e3fa1c5b-198b-4724-b62e-590ff61208f9",
-        "c4fcdba2-dd4b-4659-bc2d-631f215b46fd"
+        "c4fcdba2-dd4b-4659-bc2d-631f215b46fd",
+        "85018ae5-01d3-4ac6-8395-b5df16bc0309"
     ],
     "filterType": "GMFolder",
     "folderName": "030bac34-7472-4ace-b552-df6431a828ac",
