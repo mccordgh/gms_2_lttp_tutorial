@@ -3,22 +3,8 @@ initialize_hurtbox_entity();
 
 image_speed = 0;
 
-enum player {
-	move,
-	sword,
-	evade,
-	bomb,
-	bow,
-	found_item,
-	hit
-}
-
-enum dir {
-	right,
-	up,
-	left,
-	down
-}
+global.other_player_count++;
+global.other_players[global.other_player_count] = id;
 
 acceleration_ = 1;
 max_speed_ = 2;
@@ -26,7 +12,7 @@ direction_facing_ = dir.right;
 roll_direction_ = 0;
 roll_speed_ = 2;
 
-highlight_color_ = c_green;
+highlight_color_ = script_get_highlight_color();
 
 current_found_item_sprite_ = noone;
 starting_state_ = player.move;

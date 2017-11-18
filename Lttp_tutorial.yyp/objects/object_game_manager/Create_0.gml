@@ -13,6 +13,9 @@ global.player_start_position = instance_multiplayer_big_start;
 
 global.sword_not_found = 1;
 
+global.other_player_count = 0;
+global.other_players = [];
+
 var _font_string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ.abcdefghijklmnopqrstuvwxyz1234567890>,!':-+";
 global.font = font_add_sprite_ext(sprite_font, _font_string, true, 1);
 draw_set_font(global.font);

@@ -12,3 +12,5 @@ right_pressed_ = keyboard_check_pressed(vk_right);
 left_pressed_ = keyboard_check_pressed(vk_left);
 
 pause_pressed_ = keyboard_check_pressed(vk_enter);
+
+left_mouse_pressed_ = mouse_check_button_pressed(mb_left);
