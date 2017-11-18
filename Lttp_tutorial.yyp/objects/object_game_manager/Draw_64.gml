@@ -1,6 +1,8 @@
 var _gui_width = display_get_gui_width();
 var _gui_height = display_get_gui_height();
 
+draw_set_colour(c_white);
+
 // If we are paused, draw a copy of the game screen with transparent black box behind it
 if (sprite_exists(paused_sprite_)) {
 	draw_sprite_ext(paused_sprite_,

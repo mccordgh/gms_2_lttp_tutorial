@@ -3,4 +3,4 @@ description_ = "";
 show_amount = false;
 amount_ = 0;
 action_ = player.sword;
-cost_ = 1;
+cost_ = 0;
