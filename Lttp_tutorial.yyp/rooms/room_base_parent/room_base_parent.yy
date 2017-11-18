@@ -2,7 +2,7 @@
 {
     "name": "room_base_parent",
     "id": "030bac34-7472-4ace-b552-df6431a828ac",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

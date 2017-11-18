@@ -1198,6 +1198,25 @@
             }
         },
         {
+            "Key": "62a0bede-b88e-4d5d-b6e8-d538fa02c079",
+            "Value": {
+                "id": "2963a812-c81c-43cb-a258-718c3cef2b77",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprite_lhasa_interior_red_room_bg\/sprite_lhasa_interior_red_room_bg.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "62be7dd3-3c4e-444b-bf75-ca6060aaddae",
             "Value": {
                 "id": "e1069f45-dc4d-4634-8e77-2a3e70993d75",
@@ -1787,6 +1806,25 @@
             }
         },
         {
+            "Key": "895f4422-5dcf-400a-b1cf-3903564c728c",
+            "Value": {
+                "id": "1138b439-b418-416a-a56f-f4deb6004c30",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "tilesets\/tileset_lhasa_interior_red_room\/tileset_lhasa_interior_red_room.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "8a743b57-55c0-4fd1-8e15-0e73d712b787",
             "Value": {
                 "id": "dbafc80d-ce0c-420d-bcff-9ce3b97b0f36",
@@ -2163,6 +2201,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/sprite_player_run_up\/sprite_player_run_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a61432ec-65db-4eb7-8466-09e1adc2c6b5",
+            "Value": {
+                "id": "17a4ea46-57a9-454e-8e10-4190163be5de",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprite_lhasa_interior_red_room\/sprite_lhasa_interior_red_room.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3038,6 +3095,25 @@
                 ],
                 "resourcePath": "scripts\/add_movement_maxspeed\/add_movement_maxspeed.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ebd63874-e203-4358-a630-009a81dabb4d",
+            "Value": {
+                "id": "0231bc5b-724b-4521-a30d-41cedcc967cf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/room_multiplayer_big\/room_multiplayer_big.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

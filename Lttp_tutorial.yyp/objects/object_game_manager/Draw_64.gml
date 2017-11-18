@@ -65,5 +65,7 @@ if (instance_exists(global.equipped_item_[1])) {
 
 //DEBUGZ
 if (instance_exists(object_player)) {
-	draw_text(50, 50, string(object_player.depth));
+	draw_text(10, 35, "player depth: " + string(object_player.depth));
 }
+
+draw_text(10, 45, "room name: " + string(room));
