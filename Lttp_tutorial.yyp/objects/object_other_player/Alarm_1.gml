@@ -1,7 +1,7 @@
 /// @description Stamina Recharge
 
-global.player_stamina = min(global.player_max_stamina, global.player_stamina + 1);
+stamina_ = min(max_stamina_, stamina_ + 1);
 
-if (global.player_stamina < global.player_max_stamina) {
+if (stamina_ < max_stamina_) {
 	alarm[1] = global.one_second;	
 }

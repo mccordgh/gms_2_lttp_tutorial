@@ -2,9 +2,17 @@ initialize_movement_entity(0.5, 1, object_solid);
 initialize_hurtbox_entity();
 
 image_speed = 0;
+alarm[4] = global.one_second * 3;
 
 global.other_player_count++;
-global.other_players[global.other_player_count] = id;
+global.other_players[global.other_player_count - 1] = id;
+other_index_ = global.other_player_count - 1;
+
+max_health_ = 2;
+health_ = max_health_;
+
+max_stamina_ = 3;
+stamina_ = max_stamina_;
 
 acceleration_ = 1;
 max_speed_ = 2;

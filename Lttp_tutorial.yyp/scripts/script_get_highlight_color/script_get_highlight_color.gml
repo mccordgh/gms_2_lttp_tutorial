@@ -9,4 +9,10 @@ _highlight_colors[4] = c_yellow;
 _highlight_colors[5] = c_aqua;
 _highlight_colors[6] = c_olive;
 
-return _highlight_colors[min(6, global.other_player_count)];
+var _number_of_highlights = array_length_1d(_highlight_colors);
+var _highlight_counter = global.other_player_count - 
+	(_number_of_highlights *
+	floor(global.other_player_count / _number_of_highlights)
+	);
+
+return _highlight_colors[_highlight_counter];

@@ -13,9 +13,11 @@ if (instance_exists(object_player)) {
 }
 
 for (var i = 0; i < global.other_player_count; i++) {
-	var _circle_x = global.other_players[i].x;
-	var _circle_y = global.other_players[i].y;
+	if (instance_exists(global.other_players[i])) {
+		var _circle_x = global.other_players[i].x;
+		var _circle_y = global.other_players[i].y;
 	
-	draw_set_colour(global.other_players[i].highlight_color_);
-	draw_circle(_circle_x, _circle_y, _circle_size, false);
+		draw_set_colour(global.other_players[i].highlight_color_);
+		draw_circle(_circle_x, _circle_y, _circle_size, false);
+	}
 }

@@ -1,7 +1,7 @@
 /// @description Exit Collision
 
-global.player_start_position = other.start_;
+//global.player_start_position = other.start_;
 
-persistent = true;
+//persistent = true;
 
-room_goto(other.room_);
+//room_goto(other.room_);
