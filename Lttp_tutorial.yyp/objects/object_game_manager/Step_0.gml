@@ -57,3 +57,11 @@ if (object_input_manager.pause_pressed_) {
 		}
 	}
 }
+
+if (object_input_manager.fullscreen_pressed_) {
+	if (window_get_fullscreen()) {
+		window_set_fullscreen(false);	
+	} else {
+		window_set_fullscreen(true);	
+	}
+}

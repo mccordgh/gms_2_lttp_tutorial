@@ -16,7 +16,7 @@ stamina_ = max_stamina_;
 
 acceleration_ = 1;
 max_speed_ = 2;
-direction_facing_ = dir.right;
+direction_facing_ = dir.down;
 roll_direction_ = 0;
 roll_speed_ = 2;
 
