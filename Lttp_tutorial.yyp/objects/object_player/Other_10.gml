@@ -1,9 +1,8 @@
 /// @description Move state
 
-var _animation_speed = 0.6
 x_input_ = object_input_manager.right_ - object_input_manager.left_;
 y_input_ = object_input_manager.down_ - object_input_manager.up_;
-var _input_direction = point_direction(0, 0, x_input_, y_input_);
+input_direction_ = point_direction(0, 0, x_input_, y_input_);
 
 roll_direction_ = direction_facing_ * 90;
 
@@ -17,10 +16,10 @@ if (x_input_ == 0 and y_input_ == 0) {
 	image_speed = 0;
 	apply_friction_to_movement_entity();
 } else {
-	image_speed = _animation_speed;
+	image_speed = animation_speed_;
 	image_xscale = x_input_ == -1 ? -1 : 1;
-	get_direction_facing(_input_direction);
-	add_movement_maxspeed(_input_direction, acceleration_, max_speed_);
+	get_direction_facing(input_direction_);
+	add_movement_maxspeed(input_direction_, acceleration_, max_speed_);
 	roll_direction_ = direction_facing_ * 90;
 }
 

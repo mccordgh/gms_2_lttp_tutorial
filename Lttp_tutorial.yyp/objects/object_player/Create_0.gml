@@ -23,17 +23,19 @@ enum dir {
 
 x_input_ = 0;
 y_input_ = 0;
+input_direction_ = 0;
 
 acceleration_ = 1;
 max_speed_ = 2;
 direction_facing_ = dir.right;
 roll_direction_ = 0;
 roll_speed_ = 2;
+animation_speed_ = 0.6
 
 z_ = 0;
-z_speed_max_ = -6;
+z_speed_max_ = -4;
 z_speed_ = z_speed_max_;
-gravity_max_ = 0.24;
+gravity_max_ = 0.25;
 gravity_ = gravity_max_;
 
 highlight_color_ = c_green;

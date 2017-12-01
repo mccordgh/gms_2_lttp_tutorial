@@ -3,6 +3,21 @@
 z_ += z_speed_;
 z_speed_ += gravity_;
 
+if (x_input_ == 0 and y_input_ == 0) {
+	// Not Moving
+	image_index = 0;
+	image_speed = 0;
+	apply_friction_to_movement_entity();
+} else {
+	image_speed = animation_speed_;
+	image_xscale = x_input_ == -1 ? -1 : 1;
+	get_direction_facing(input_direction_);
+	add_movement_maxspeed(input_direction_, acceleration_, max_speed_);
+	roll_direction_ = direction_facing_ * 90;
+	
+	move_movement_entity(false);
+}
+
 if (z_ >= 0 and z_speed_ > -1) {
 	z_ = 0;
 	z_speed_ = z_speed_max_;
