@@ -1,20 +1,24 @@
 /// @description Move state
 
 var _animation_speed = 0.6
-var _x_input = object_input_manager.right_ - object_input_manager.left_;
-var _y_input = object_input_manager.down_ - object_input_manager.up_;
-var _input_direction = point_direction(0, 0, _x_input, _y_input);
+x_input_ = object_input_manager.right_ - object_input_manager.left_;
+y_input_ = object_input_manager.down_ - object_input_manager.up_;
+var _input_direction = point_direction(0, 0, x_input_, y_input_);
 
 roll_direction_ = direction_facing_ * 90;
 
-if (_x_input == 0 and _y_input == 0) {
+if (object_input_manager.jump_pressed_) {
+	state_ = player.jump;	
+}
+
+if (x_input_ == 0 and y_input_ == 0) {
 	// Not Moving
 	image_index = 0;
 	image_speed = 0;
 	apply_friction_to_movement_entity();
 } else {
 	image_speed = _animation_speed;
-	image_xscale = _x_input == -1 ? -1 : 1;
+	image_xscale = x_input_ == -1 ? -1 : 1;
 	get_direction_facing(_input_direction);
 	add_movement_maxspeed(_input_direction, acceleration_, max_speed_);
 	roll_direction_ = direction_facing_ * 90;

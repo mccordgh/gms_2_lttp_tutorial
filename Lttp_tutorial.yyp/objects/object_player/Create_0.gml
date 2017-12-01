@@ -10,7 +10,8 @@ enum player {
 	bomb,
 	bow,
 	found_item,
-	hit
+	hit,
+	jump
 }
 
 enum dir {
@@ -20,11 +21,20 @@ enum dir {
 	down
 }
 
+x_input_ = 0;
+y_input_ = 0;
+
 acceleration_ = 1;
 max_speed_ = 2;
 direction_facing_ = dir.right;
 roll_direction_ = 0;
 roll_speed_ = 2;
+
+z_ = 0;
+z_speed_max_ = -6;
+z_speed_ = z_speed_max_;
+gravity_max_ = 0.24;
+gravity_ = gravity_max_;
 
 highlight_color_ = c_green;
 
@@ -64,3 +74,9 @@ sprite_[player.bomb, dir.down] = sprite_player_run_down;
 
 // Found Item State Sprite Lookup Table
 sprite_[player.found_item, dir.down] = sprite_player_found_item;
+
+// Jump State Sprite Lookup Table
+sprite_[player.jump, dir.right] = sprite_player_run_right;
+sprite_[player.jump, dir.up] = sprite_player_run_up;
+sprite_[player.jump, dir.left] = sprite_player_run_right;
+sprite_[player.jump, dir.down] = sprite_player_run_down;
