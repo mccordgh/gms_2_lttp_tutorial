@@ -37,6 +37,7 @@ z_speed_max_ = -4;
 z_speed_ = z_speed_max_;
 gravity_max_ = 0.25;
 gravity_ = gravity_max_;
+height_ = 0;
 
 highlight_color_ = c_green;
 

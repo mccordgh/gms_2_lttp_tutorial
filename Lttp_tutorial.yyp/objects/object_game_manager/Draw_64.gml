@@ -75,3 +75,11 @@ if (instance_exists(object_player)) {
 //draw_text(10, 55, "other player count: " + string(global.other_player_count));
 
 //draw_text(10, 65, "length other player arr: " + string(array_length_1d(global.other_players)));
+
+draw_text(50, 0, "p1 Z: " + string(object_player.z_));
+
+draw_text(50, 10, "p1 height: " + string(object_player.height_));
+
+draw_text(50, 20, "p1 tile height: " + string(global.player_tile_height_));
+
+draw_text(50, 30, "jumpable id: " + string(global.jumpable_));

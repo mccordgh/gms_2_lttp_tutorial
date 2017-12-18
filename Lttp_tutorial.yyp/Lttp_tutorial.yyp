@@ -894,6 +894,25 @@
             }
         },
         {
+            "Key": "499e5139-5308-4c30-b530-3cc248e25a3a",
+            "Value": {
+                "id": "15a392ce-9b7e-4030-a459-664fbc72e784",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/handle_jumpable_collision\/handle_jumpable_collision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4aa9f5d6-d673-4b4b-ac1b-fcf1fcbf8698",
             "Value": {
                 "id": "2e7beb33-72a4-4e20-80b1-df50cbe18067",
@@ -3485,6 +3504,7 @@
         "2f57f718-6132-49d7-92b0-fad512ab57ec",
         "d505ab3a-2a93-4577-823e-15195d53307e",
         "0d822d42-1de4-4492-be55-bd9492508c06",
+        "499e5139-5308-4c30-b530-3cc248e25a3a",
         "27211e6a-de7e-4542-8de0-d8a99b74e121",
         "de25e8f6-6fef-47d9-a70b-a2fa577b3814",
         "5f392e65-4e33-42c9-b911-25f97d4ea2ed",

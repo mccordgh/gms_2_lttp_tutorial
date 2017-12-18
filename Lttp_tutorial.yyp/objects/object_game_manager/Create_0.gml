@@ -1,5 +1,11 @@
 /// @description Initialize
 
+global.jumpable_ = noone;
+global.player_tile_height_ = 0;
+
+#macro TILE_HEIGHT 16
+#macro TILE_WIDTH 24
+
 global.one_second = game_get_speed(gamespeed_fps);
 
 instance_create_layer(0, 0, "Instances", object_input_manager);

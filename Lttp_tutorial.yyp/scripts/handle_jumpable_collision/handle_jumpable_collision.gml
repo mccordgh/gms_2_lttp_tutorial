@@ -1,25 +1,19 @@
-///@param _bounce
-var _bounce = argument0;
+/// @param bounce
+/// @param jumpable
 
-if place_meeting(
-	x+lengthdir_x(speed_, direction_),
-	y+lengthdir_y(speed_, direction_),
-	object_jumpable
-	) {
-		var _jumpable = instance_place(
-			x+lengthdir_x(speed_, direction_),
-			y+lengthdir_y(speed_, direction_),
-			object_jumpable)
-			
-		handle_jumpable_collision(_bounce, _jumpable);
-		exit;
-	}
+var _bounce = argument0;
+var _jumpable = argument1;
+
+var _player_height = floor((abs(z_) / TILE_HEIGHT)) +  height_;
+
+global.jumpable_ = _jumpable;
+global.player_tile_height_ = _player_height;
 
 // Apply friction when sliding on walls
 if place_meeting(
 	x+lengthdir_x(speed_, direction_),
 	y+lengthdir_y(speed_, direction_),
-	collision_object_)
+	_jumpable)
 	and !_bounce {
 	speed_ = approach(speed_, 0, friction_ / 2);
 }
@@ -29,25 +23,26 @@ var _y_speed = lengthdir_y(speed_, direction_);
 
 if speed_ <= 0 exit; // No need to check for collisions
 
-if place_meeting(x+_x_speed, y, collision_object_) {
-	while !place_meeting(x + sign(_x_speed), y, collision_object_) {
+if place_meeting(x+_x_speed, y, _jumpable) and (state_ != player.jump) {
+	while !place_meeting(x + sign(_x_speed), y, _jumpable) {
 		x += sign(_x_speed);
 	}
 	
 	_x_speed = _bounce ? -(_x_speed) * bounce_amount_ : 0;
 	
 }
-x += _x_speed;
 
-if place_meeting(x, y+_y_speed, collision_object_) {
-	while !place_meeting(x, y+sign(_y_speed), collision_object_) {
+if (_player_height >= _jumpable.height_) x += _x_speed;
+
+if place_meeting(x, y+_y_speed, _jumpable) and (state_ != player.jump) {
+	while !place_meeting(x, y+sign(_y_speed), _jumpable) {
 		y += sign(_y_speed);
 	}
 	
 	_y_speed = _bounce ? -(_y_speed)*bounce_amount_ : 0;
 	
 }
-y += _y_speed;
+if (_player_height >= _jumpable.height_) y += _y_speed;
 
 // Make sure to update speed and direction
 speed_ = point_distance(0, 0, _x_speed, _y_speed);
