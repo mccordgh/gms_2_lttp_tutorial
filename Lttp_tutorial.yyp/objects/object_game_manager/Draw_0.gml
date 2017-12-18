@@ -1,5 +1,7 @@
 /// Draw highlights
 
+exit;
+
 var _circle_size = 12;
 
 draw_set_circle_precision(4);

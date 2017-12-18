@@ -286,6 +286,25 @@
             }
         },
         {
+            "Key": "12aabb5b-3360-4b84-b0e8-0fe1e5a29d59",
+            "Value": {
+                "id": "88f912b2-b360-47c2-b611-c767791178ce",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprite_alundra_desert\/sprite_alundra_desert.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "142e5e43-8371-45e7-b49c-b7b1f95d3fd9",
             "Value": {
                 "id": "c6f299ea-5bf9-4fcb-bcb0-b42070e2ae27",
@@ -416,6 +435,25 @@
                 ],
                 "resourcePath": "sprites\/sprite_gem_shine_effect\/sprite_gem_shine_effect.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1a03b09e-0104-445f-82cd-7802bdfb99c5",
+            "Value": {
+                "id": "02ce5d0c-3876-4b3b-8498-e0915a8a789f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/room_jump_party\/room_jump_party.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1103,6 +1141,25 @@
             }
         },
         {
+            "Key": "5d677f69-e4fc-4a5e-ad6e-c63301caad54",
+            "Value": {
+                "id": "4c6de70d-246c-487b-8f44-aedc6318ebd8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprite_jumpable\/sprite_jumpable.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5e571f2c-8804-446c-ad2d-afd803c47a32",
             "Value": {
                 "id": "562a7bd2-0612-4fbb-9f79-dd98eaca2a8d",
@@ -1404,6 +1461,25 @@
                 ],
                 "resourcePath": "views\/6b614141-6679-4d8b-a086-b1f72c8dc176.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6d62a7a8-3859-4533-b84a-fd8e401652f3",
+            "Value": {
+                "id": "408fecd9-5da6-49d5-b90d-fb6012f22c4e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "tilesets\/tileset_alundra_desert\/tileset_alundra_desert.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -2677,6 +2753,25 @@
                 ],
                 "resourcePath": "sprites\/sprite_player_run_down\/sprite_player_run_down.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d27bf653-0abf-4236-810c-fcfd61699ccb",
+            "Value": {
+                "id": "b7a40914-b9db-4ca5-9b4f-09515797d092",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/object_jumpable\/object_jumpable.yy",
+                "resourceType": "GMObject"
             }
         },
         {
