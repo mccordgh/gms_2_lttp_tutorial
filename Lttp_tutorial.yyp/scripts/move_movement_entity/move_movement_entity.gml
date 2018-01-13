@@ -1,4 +1,18 @@
 ///@param _bounce
+ 
+//DEBUGGING STUFF *****
+global.solid_ = instance_place(
+	x+lengthdir_x(speed_, direction_),
+	y+lengthdir_y(speed_, direction_),
+	collision_object_
+);
+
+global.jumpable_ = instance_place(
+	x+lengthdir_x(speed_, direction_),
+	y+lengthdir_y(speed_, direction_),
+	object_jumpable
+);
+//DEBUGGING STUFF *******
 
 var _bounce = argument0;
 
@@ -9,10 +23,19 @@ var _jumpable = instance_place(
 	)
 	
 if (_jumpable)
-{		
+{
 	handle_jumpable_collision(_jumpable);
 	
 	exit;
+} else {
+	global.jumpable_ = noone;
+	if (z_floor_ < 0)
+	{
+		z_floor_ = 0;
+		z_speed_ = 0;
+		depth_offset_ = 0;
+		state_ = player.falling;
+	}
 }
 
 // Apply friction when sliding on walls

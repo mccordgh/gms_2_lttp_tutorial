@@ -1,4 +1,4 @@
-/// @description Jump State
+/// @description Falling State
 
 z_ += z_speed_;
 z_speed_ += gravity_;
@@ -16,11 +16,6 @@ if (x_input_ == 0 and y_input_ == 0) {
 	roll_direction_ = direction_facing_ * 90;
 	
 	move_movement_entity(false);
-}
-
-if (z_speed_ >= 0)
-{
-	state_ = player.falling;	
 }
 
 if (z_ >= z_floor_)

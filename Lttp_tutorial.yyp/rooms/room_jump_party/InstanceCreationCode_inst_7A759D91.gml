@@ -1,4 +1,2 @@
-z_ = -2 * TILE_HEIGHT;
-height_ = 0;
 
-sprite_index = sprite_stone_platform;
+initialize_jumpable_entity(-2, 0, 3, 3, sprite_stone_platform);

@@ -11,7 +11,8 @@ enum player {
 	bow,
 	found_item,
 	hit,
-	jump
+	jump,
+	falling
 }
 
 enum dir {
@@ -39,6 +40,7 @@ z_floor_ = 0;
 height_ = 0;
 gravity_max_ = 0.25;
 gravity_ = gravity_max_;
+depth_offset_ = 0;
 
 highlight_color_ = c_green;
 
@@ -84,3 +86,9 @@ sprite_[player.jump, dir.right] = sprite_player_run_right;
 sprite_[player.jump, dir.up] = sprite_player_run_up;
 sprite_[player.jump, dir.left] = sprite_player_run_right;
 sprite_[player.jump, dir.down] = sprite_player_run_down;
+
+// Jump State Sprite Lookup Table
+sprite_[player.falling, dir.right] = sprite_player_run_right;
+sprite_[player.falling, dir.up] = sprite_player_run_up;
+sprite_[player.falling, dir.left] = sprite_player_run_right;
+sprite_[player.falling, dir.down] = sprite_player_run_down;

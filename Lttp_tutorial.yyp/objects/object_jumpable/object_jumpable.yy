@@ -5,16 +5,6 @@
     "name": "object_jumpable",
     "eventList": [
         {
-            "id": "cc6ef011-e3af-454a-aab1-c68242d253df",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "d27bf653-0abf-4236-810c-fcfd61699ccb"
-        },
-        {
             "id": "6597ec2c-694e-4a9a-a2dc-a8995c48773a",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -22,6 +12,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
+            "m_owner": "d27bf653-0abf-4236-810c-fcfd61699ccb"
+        },
+        {
+            "id": "b69234bb-f0e3-4c5f-8eec-331b735f9e6c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "d27bf653-0abf-4236-810c-fcfd61699ccb"
         }
     ],

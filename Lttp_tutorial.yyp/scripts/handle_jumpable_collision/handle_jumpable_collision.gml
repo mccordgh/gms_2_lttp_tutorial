@@ -2,7 +2,6 @@
 
 var _jumpable = argument0;
 
-global.jumpable_ = _jumpable;
 global.player_tile_height_ = z_;
 
 // Apply friction when sliding on walls
@@ -33,6 +32,7 @@ if (
 
 if (zh_ <= _jumpable.zh_)
 {
+	depth_offset_ = _jumpable.depth - 1;
 	z_floor_ = _jumpable.zh_;
 	x += _x_speed;
 }
@@ -53,9 +53,11 @@ if (
 
 if (zh_ <= _jumpable.zh_)
 {
+	depth_offset_ = _jumpable.depth - 1;
 	z_floor_ = _jumpable.zh_;
 	y += _y_speed;
 }
+
 // Make sure to update speed and direction
 speed_ = point_distance(0, 0, _x_speed, _y_speed);
 direction_ = point_direction(0, 0, _x_speed, _y_speed);

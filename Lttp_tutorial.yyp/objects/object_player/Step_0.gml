@@ -1,5 +1,6 @@
-depth = -y;
 zh_ = z_ + height_;
+
+depth = -y + zh_ + depth_offset_;
 
 event_user(state_);
 
