@@ -1,5 +1,7 @@
 /// @description Initialize
 
+global.environment_ = "dev";
+
 global.jumpable_ = noone;
 
 #macro TILE_HEIGHT 16

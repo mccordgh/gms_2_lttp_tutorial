@@ -20,6 +20,7 @@ if (x_input_ == 0 and y_input_ == 0) {
 
 if (z_speed_ >= 0)
 {
+	falling_speed_ = max_speed_;
 	state_ = player.falling;	
 }
 

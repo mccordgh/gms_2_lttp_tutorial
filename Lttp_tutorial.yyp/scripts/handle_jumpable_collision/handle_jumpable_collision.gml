@@ -32,7 +32,7 @@ if (
 
 if (zh_ <= _jumpable.zh_)
 {
-	depth_offset_ = _jumpable.depth - 1;
+	jumpable_depth_ =  _jumpable.depth - 1;
 	z_floor_ = _jumpable.zh_;
 	x += _x_speed;
 }
@@ -53,7 +53,7 @@ if (
 
 if (zh_ <= _jumpable.zh_)
 {
-	depth_offset_ = _jumpable.depth - 1;
+	jumpable_depth_ = _jumpable.depth - 1;
 	z_floor_ = _jumpable.zh_;
 	y += _y_speed;
 }

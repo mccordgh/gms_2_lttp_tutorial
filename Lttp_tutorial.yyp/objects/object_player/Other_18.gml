@@ -2,6 +2,7 @@
 
 z_ += z_speed_;
 z_speed_ += gravity_;
+falling_speed_ -= (max_speed_ * .04);
 
 if (x_input_ == 0 and y_input_ == 0) {
 	// Not Moving
@@ -11,8 +12,9 @@ if (x_input_ == 0 and y_input_ == 0) {
 } else {
 	image_speed = animation_speed_;
 	image_xscale = x_input_ == -1 ? -1 : 1;
+	
 	get_direction_facing(input_direction_);
-	add_movement_maxspeed(input_direction_, acceleration_, max_speed_);
+	add_movement_maxspeed(input_direction_, acceleration_, falling_speed_);
 	roll_direction_ = direction_facing_ * 90;
 	
 	move_movement_entity(false);

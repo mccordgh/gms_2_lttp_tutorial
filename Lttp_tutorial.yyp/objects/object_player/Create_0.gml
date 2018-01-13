@@ -40,7 +40,8 @@ z_floor_ = 0;
 height_ = 0;
 gravity_max_ = 0.25;
 gravity_ = gravity_max_;
-depth_offset_ = 0;
+jumpable_depth_ = 0;
+depth_y_zh_ = 0;
 
 highlight_color_ = c_green;
 

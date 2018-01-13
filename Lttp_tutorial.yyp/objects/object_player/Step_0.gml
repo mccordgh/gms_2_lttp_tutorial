@@ -1,6 +1,7 @@
 zh_ = z_ + height_;
+depth_y_zh_ = -y + zh_;
 
-depth = -y + zh_ + depth_offset_;
+depth = min(depth_y_zh_, jumpable_depth_);
 
 event_user(state_);
 

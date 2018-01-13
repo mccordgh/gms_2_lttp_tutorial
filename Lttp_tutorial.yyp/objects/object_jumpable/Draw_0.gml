@@ -10,3 +10,12 @@
 draw_sprite_ext(sprite_index, image_index, x, y + z_, image_xscale, image_yscale, 0, -1, 1);
 
 //draw_sprite(sprite_index, image_index, x, y + _yOffset);
+
+if (global.environment_ = "dev")
+{
+	image_alpha = 0.3;
+	gpu_set_fog(true, c_blue, 0, 0.3);
+	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, -1, 1);
+	gpu_set_fog(false, c_blue, 0, 0.3);
+
+}

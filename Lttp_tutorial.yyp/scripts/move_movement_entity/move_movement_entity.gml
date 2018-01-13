@@ -28,12 +28,12 @@ if (_jumpable)
 	
 	exit;
 } else {
-	global.jumpable_ = noone;
 	if (z_floor_ < 0)
 	{
 		z_floor_ = 0;
 		z_speed_ = 0;
-		depth_offset_ = 0;
+		jumpable_depth_ = 0;
+		falling_speed_ = max_speed_;
 		state_ = player.falling;
 	}
 }
