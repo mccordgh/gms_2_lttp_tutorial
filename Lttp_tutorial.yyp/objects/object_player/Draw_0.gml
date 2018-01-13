@@ -1,4 +1,4 @@
-//draw_sprite(sprite_medium_shadow, 0, x, y);
+draw_sprite(sprite_medium_shadow, 0, x, y + z_floor_);
 
 draw_sprite_ext(sprite_index, image_index, x, y + z_, image_xscale, image_yscale, 0, -1, 1);
 
