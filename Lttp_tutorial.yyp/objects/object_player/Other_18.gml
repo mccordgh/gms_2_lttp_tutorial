@@ -2,7 +2,7 @@
 
 z_ += z_speed_;
 z_speed_ += gravity_;
-falling_speed_ -= (max_speed_ * .04);
+//falling_speed_ -= (max_speed_ * .04);
 
 if (x_input_ == 0 and y_input_ == 0) {
 	// Not Moving

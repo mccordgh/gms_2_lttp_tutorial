@@ -18,11 +18,11 @@ if (x_input_ == 0 and y_input_ == 0) {
 	move_movement_entity(false);
 }
 
-if (z_speed_ >= 0)
-{
-	falling_speed_ = max_speed_;
-	state_ = player.falling;	
-}
+//if (z_speed_ >= 0)
+//{
+//	falling_speed_ = max_speed_;
+//	state_ = player.falling;	
+//}
 
 if (z_ >= z_floor_)
 {

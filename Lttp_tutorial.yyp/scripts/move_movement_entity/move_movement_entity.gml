@@ -28,14 +28,14 @@ if (_jumpable)
 	
 	exit;
 } else {
-	if (z_floor_ < 0)
+	if (z_floor_ < 0 and state_ != player.jump)
 	{
-		z_floor_ = 0;
 		z_speed_ = 0;
 		jumpable_depth_ = 0;
-		falling_speed_ = max_speed_;
-		state_ = player.falling;
+		//falling_speed_ = max_speed_;
+		state_ = player.jump;
 	}
+	z_floor_ = 0;
 }
 
 // Apply friction when sliding on walls

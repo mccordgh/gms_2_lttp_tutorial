@@ -30,6 +30,6 @@ inventory_use_item(object_input_manager.action_two_pressed_, global.equipped_ite
 move_movement_entity(false);
 
 // DEBUGZ
-if (object_input_manager.left_mouse_down_) {
-	instance_create_layer(mouse_x, mouse_y, "Instances", object_other_player);	
-}
+//if (object_input_manager.left_mouse_down_) {
+//	instance_create_layer(mouse_x, mouse_y, "Instances", object_other_player);	
+//}
