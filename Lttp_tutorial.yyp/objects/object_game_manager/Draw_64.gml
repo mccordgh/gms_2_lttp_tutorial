@@ -54,7 +54,6 @@ draw_text(_x - 12, _y - 8, _gem_string);
 
 inventory_draw(4, 36);
 
-
 if (instance_exists(global.equipped_item_[0])) {
 	draw_sprite(sprite_inventory_box, 0, 4, 4);
 	draw_sprite(global.equipped_item_[0].sprite_, 0, 20, 20);	
@@ -67,7 +66,12 @@ if (instance_exists(global.equipped_item_[1])) {
 
 //DEBUGZ
 if (instance_exists(object_player)) {
-	//draw_text(10, 35, "player depth: " + string(object_player.depth));
+	//draw_text(40, 10, "pl depth: " + string(object_player.depth));
+	draw_text(40, 0, "pl z_: " + string(object_player.z_));
+	//draw_text(180, 10, "pl state: " + string(object_player.state_));
+	draw_text(180, 20, "pl z_speed_: " + string(object_player.z_speed_));
+	//draw_text(180, 30, "pl gravity_: " + string(object_player.gravity_));
+	draw_text(40, 20, "p1 z_floor_:" + string(object_player.z_floor_));
 }
 
 //draw_text(10, 45, "room name: " + string(room));
@@ -76,10 +80,9 @@ if (instance_exists(object_player)) {
 
 //draw_text(10, 65, "length other player arr: " + string(array_length_1d(global.other_players)));
 
-draw_text(50, 0, "p1 Z: " + string(object_player.z_));
 
-draw_text(50, 10, "p1 height: " + string(object_player.height_));
-
-draw_text(50, 20, "p1 tile height: " + string(global.player_tile_height_));
-
-draw_text(50, 30, "jumpable id: " + string(global.jumpable_));
+if (global.jumpable_)
+{
+	draw_text(40, 40, "jumpable zheight: " + string(global.jumpable_.height_ + global.jumpable_.z_));
+	draw_text(40, 30, "jumpable id: " + string(global.jumpable_));
+}

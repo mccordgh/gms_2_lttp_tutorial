@@ -1,4 +1,5 @@
 depth = -y;
+zh_ = z_ + height_;
 
 event_user(state_);
 

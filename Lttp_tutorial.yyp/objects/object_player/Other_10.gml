@@ -7,6 +7,7 @@ input_direction_ = point_direction(0, 0, x_input_, y_input_);
 roll_direction_ = direction_facing_ * 90;
 
 if (object_input_manager.jump_pressed_) {
+	starting_z_ = z_;
 	state_ = player.jump;	
 }
 

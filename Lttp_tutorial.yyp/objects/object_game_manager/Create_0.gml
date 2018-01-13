@@ -1,7 +1,6 @@
 /// @description Initialize
 
 global.jumpable_ = noone;
-global.player_tile_height_ = 0;
 
 #macro TILE_HEIGHT 16
 #macro TILE_WIDTH 24
@@ -43,4 +42,4 @@ inventory_add_item(object_bomb_item);
 inventory_add_item(object_ring_item);
 inventory_add_item(object_sword_item);
 
-audio_play_sound(sound_bg_music, 10, true);
+//audio_play_sound(sound_bg_music, 10, true);

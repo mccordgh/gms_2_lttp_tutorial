@@ -35,9 +35,10 @@ animation_speed_ = 0.6
 z_ = 0;
 z_speed_max_ = -4;
 z_speed_ = z_speed_max_;
+z_floor_ = 0;
+height_ = 0;
 gravity_max_ = 0.25;
 gravity_ = gravity_max_;
-height_ = 0;
 
 highlight_color_ = c_green;
 

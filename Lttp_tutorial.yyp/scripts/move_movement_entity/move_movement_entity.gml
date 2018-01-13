@@ -1,26 +1,27 @@
 ///@param _bounce
+
 var _bounce = argument0;
 
-if place_meeting(
-	x+lengthdir_x(speed_, direction_),
-	y+lengthdir_y(speed_, direction_),
-	object_jumpable
-	) {
-		var _jumpable = instance_place(
-			x+lengthdir_x(speed_, direction_),
-			y+lengthdir_y(speed_, direction_),
-			object_jumpable)
-			
-		handle_jumpable_collision(_bounce, _jumpable);
-		exit;
-	}
+var _jumpable = instance_place(
+		x+lengthdir_x(speed_, direction_),
+		y+lengthdir_y(speed_, direction_),
+		object_jumpable
+	)
+	
+if (_jumpable)
+{		
+	handle_jumpable_collision(_jumpable);
+	
+	exit;
+}
 
 // Apply friction when sliding on walls
 if place_meeting(
 	x+lengthdir_x(speed_, direction_),
 	y+lengthdir_y(speed_, direction_),
 	collision_object_)
-	and !_bounce {
+	and !_bounce
+{
 	speed_ = approach(speed_, 0, friction_ / 2);
 }
 

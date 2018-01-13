@@ -18,8 +18,11 @@ if (x_input_ == 0 and y_input_ == 0) {
 	move_movement_entity(false);
 }
 
-if (z_ >= 0 and z_speed_ > -1) {
-	z_ = 0;
+//if (z_ <= z_floor_ and z_speed_ > -1) {
+if (z_ >= z_floor_)
+{
+	//show_message("triggred " + string(z_) + " : " + string(z_speed_));
+	z_ = z_floor_;
 	z_speed_ = z_speed_max_;
 	gravity_ = gravity_max_;
 		
